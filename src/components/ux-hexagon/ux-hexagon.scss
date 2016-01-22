@@ -1,0 +1,30 @@
+.ux-hexagon {
+	height: 200px;
+	width: 180px;
+	path {
+		fill: rgba(0,0,0,0);
+		stroke: #FFFFFF;
+		stroke-width: 10;
+		stroke-linejoin: round;
+	}
+	text {
+		font-style: normal;
+		font-weight: normal;
+		font-size: 40px;
+		line-height: 125%;
+		font-family: sans-serif;
+		text-align:center;
+		letter-spacing: 0px;
+		word-spacing: 0px;
+		writing-mode:lr-tb;
+		text-anchor:middle;
+		fill: #FFFFFF;
+		fill-opacity: 1;
+		stroke: none;
+		stroke-width: 1px;
+		stroke-linecap: butt;
+		stroke-linejoin: miter;
+		stroke-opacity: 1;
+		pointer: cursor;
+	}
+}

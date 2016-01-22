@@ -1,0 +1,6 @@
+{
+	"title": "Use case with custom attributes",
+	"template": "ux-hexatile-templateDriven",
+	"file": "src/components/ux-hexatile/use-cases/templateDriven.hbs",
+	"data": {}
+}

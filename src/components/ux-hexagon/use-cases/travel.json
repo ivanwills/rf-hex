@@ -1,0 +1,9 @@
+{
+	"title": "Use case with custom attributes",
+	"template": "ux-hexagon-templateDriven",
+	"file": "src/components/ux-hexagon/use-cases/templateDriven.hbs",
+	"data": {
+		"text": "Travel",
+		"partial": "travel"
+	}
+}
