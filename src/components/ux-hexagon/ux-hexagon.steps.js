@@ -11,7 +11,7 @@ module.exports = function () {
 
 		this.component = {};
 		this.component.container = '.ux-hexagon ';
-		this.component.dummy = this.component.container + 'h2';
+		this.component.text = this.component.container + 'text';
 
 		callback();
 
