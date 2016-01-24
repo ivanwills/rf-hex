@@ -25,8 +25,7 @@
       ],
       "componentsJson": "components/**/use-cases/*.json",
       "manifests": [
-        "./src/components/**/manifest.json",
-        "./node_modules/ractive-foundation/src/components/**/manifest.json"
+        "./src/components/**/manifest.json"
       ],
       "srcJavaScript": [
         "./src/core/**/*.js",
@@ -56,9 +55,7 @@
       "vendorsJs": "./src/vendors/**/*.js",
       "testTemplates": [
         "./src/components/**/use-cases/*.hbs",
-        "./src/plugins/**/use-cases/*.hbs",
-        "./node_modules/ractive-foundationsrc/components/**/use-cases/*.hbs",
-        "./node_modules/ractive-foundationsrc/plugins/**/use-cases/*.hbs"
+        "./src/plugins/**/use-cases/*.hbs"
       ],
       "watch": [
         "src/*.html",
