@@ -1,11 +1,20 @@
 {
-  "name": "package",
-  "version": "0.0.0",
-  "description": "",
+  "author": "Ivan Wills <ivan.wills@gmail.com>",
+  "name": "rf-hex",
+  "description": "Ractive hexagon components",
+  "version": "0.0.1",
+  "license": "GPL-3.0+",
+  "keywords": ["ractive", "foundation", "ractive-foundation", "hexagon"],
+  "node": ">=0.12",
   "scripts": {
     "test": "npm prune && npm install && gulp test",
     "start": "npm prune && npm install && gulp"
   },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ivanwills/rf-hex.git"
+  },
+  "bugs":  "https://github.com/ivanwills/rf-hex/issues",
   "dependencies": {
     "ractive": "^0.7.3"
   },
