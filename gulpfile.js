@@ -312,6 +312,38 @@ gulp.task('build', ['clean'], function (callback) {
 	], callback);
 });
 
+gulp.task('clean-dist', function (callback) {
+	del([
+		'dist/**/*'
+	], callback);
+});
+
+gulp.task('dist', ['clean-dist', 'build'], function () {
+
+	return mergeStream(
+
+		gulp.src([
+			'components.js',
+			'templates.js',
+			'partials.js'
+			], { cwd: './public/compiled/' })
+		.pipe(plugins.concat('hex.js'))
+		.pipe(plugins.rename(function (path) {
+			console.log(path.dirname, path.basename);
+			//path.dirname = '';
+			//path.basename = 'ractivef';
+		}))
+		.pipe(gulp.dest('dist')),
+
+		gulp.src([
+			'components.css'
+			], { cwd: './public/components/' })
+		.pipe(plugins.concat('hex.css'))
+		.pipe(gulp.dest('dist'))
+	);
+
+});
+
 gulp.task('unit-test', function () {
 	return gulp.src('./test/**.js', { read: false })
 		.pipe(plugins.mocha({reporter: 'nyan'}));
